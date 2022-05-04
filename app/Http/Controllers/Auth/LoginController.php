@@ -95,7 +95,7 @@ class LoginController extends Controller
                 'social_avatar'  => $userSocialite->getAvatar()
             ]);
         }
-
+         
         auth()->login($social_profile->user);
 
         return redirect()->route('home');
